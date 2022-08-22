@@ -1,5 +1,6 @@
 package com.litsynp.cleanarchitecture.account.domain;
 
+import com.litsynp.cleanarchitecture.account.domain.Account.AccountId;
 import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import lombok.Value;
@@ -13,13 +14,13 @@ public class Activity {
     ActivityId id;
 
     @NonNull
-    Account.AccountId ownerAccountId;
+    AccountId ownerAccountId;
 
     @NonNull
-    Account.AccountId sourceAccountId;
+    AccountId sourceAccountId;
 
     @NonNull
-    Account.AccountId targetAccountId;
+    AccountId targetAccountId;
 
     @NonNull
     LocalDateTime timestamp;
@@ -28,9 +29,9 @@ public class Activity {
     Money money;
 
     public Activity(
-            @NonNull Account.AccountId ownerAccountId,
-            @NonNull Account.AccountId sourceAccountId,
-            @NonNull Account.AccountId targetAccountId,
+            @NonNull AccountId ownerAccountId,
+            @NonNull AccountId sourceAccountId,
+            @NonNull AccountId targetAccountId,
             @NonNull LocalDateTime timestamp,
             @NonNull Money money) {
         this.id = null;
