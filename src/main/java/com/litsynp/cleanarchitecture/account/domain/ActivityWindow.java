@@ -4,7 +4,11 @@ import com.litsynp.cleanarchitecture.account.domain.Account.AccountId;
 import lombok.NonNull;
 
 import java.time.LocalDateTime;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class ActivityWindow {
 

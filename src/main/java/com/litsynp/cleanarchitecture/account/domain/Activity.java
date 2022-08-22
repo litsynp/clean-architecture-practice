@@ -1,11 +1,13 @@
 package com.litsynp.cleanarchitecture.account.domain;
 
 import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 import lombok.Value;
 
 import java.time.LocalDateTime;
 
 @Value
+@RequiredArgsConstructor
 public class Activity {
 
     ActivityId id;
